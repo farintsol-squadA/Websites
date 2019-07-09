@@ -1,1524 +1,552 @@
 <!DOCTYPE html>
-<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-
-
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title>Project Robot</title>
-    <link rel="stylesheet" href="./index_files/normalize.min.css">
-<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
-
-	 <link href="./index_files/css" rel="stylesheet">
-	  <script src="./index_files/jquery.min.js.download"></script>
-
-<link rel="stylesheet" href="./index_files/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="./index_files/thumbnail-gallery.css">
-<link rel="stylesheet" href="./index_files/font-awesome.min.css">
-
-<link rel="stylesheet" id="select2.min-css" href="./index_files/select2.css" type="text/css" media="all">
-<link rel="stylesheet" id="jquery-ui-css" href="./index_files/jquery-ui.css" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-css" href="./index_files/bootstrap.css" type="text/css" media="all">
-<link rel="stylesheet" id="animate.min-css" href="./index_files/animate.css" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-dropdownhover.min-css" href="./index_files/bootstrap-dropdownhover.css" type="text/css" media="all">
-<link rel="stylesheet" id="classiera-components-css" href="./index_files/classiera-components.css" type="text/css" media="all">
-<link rel="stylesheet" id="classiera-css" href="./index_files/classiera.css" type="text/css" media="all">
-<link rel="stylesheet" id="owl.theme.default.min-css" href="./index_files/owl.css" type="text/css" media="all">
-<link rel="stylesheet" id="responsive-css" href="./index_files/responsive.css" type="text/css" media="all">
-
-
-	<link rel="stylesheet" href="./index_files/jquery-ui(1).css" type="text/css" media="all">
-<script src="./index_files/jquery-1.12.4.min.js.download"></script>
-<script src="./index_files/jquery-ui.min.js.download"></script>
-<script type="text/javascript" src="./index_files/jquery_003.js.download"></script><link rel="stylesheet" href="./index_files/css.css">
-
-
-<style type="text/css">
-
-
-html, body {
-    max-width: 100%;
-
-    overflow-x: hidden;
-}
-
-.btn.round:hover{border-color: #232323 !important; } .topBar, .topBar.topBar-v3{ background: #232323; } .classiera-navbar.classiera-navbar-v2, .classiera-navbar.classiera-navbar-v2 .navbar-default, .classiera-navbar.classiera-navbar-v3, .classiera-navbar.classiera-navbar-v3.affix, .home .classiera-navbar.classiera-navbar-v6{ background: #ffffff !important; } .classiera-navbar.classiera-navbar-v2 .navbar-default .navbar-nav > li > a, .classiera-navbar.classiera-navbar-v3 .nav > li > a, .classiera-navbar.classiera-navbar-v6 .navbar-default .navbar-nav > li > a, .classiera-navbar.classiera-navbar-v6 .navbar-default .login-reg a:first-of-type{ color: #232323 !important; } footer .widget-box .tagcloud a{ background: #1a1a1a !important; } footer .widget-box .tagcloud a{ color: #ffffff !important; } .footer-bottom{ background: #444444 !important; } .footer-bottom p, .footer-bottom p a, .footer-bottom ul.footer-bottom-social-icon span{ color: #8e8e8e !important; } .members-v1 .members-text h2.callout_title, .members-v4 .member-content h1, .members-v4 .member-content ul li{ color: #ffffff !important; } .members-v4 .member-content ul li span{border-color: #ffffff; } .members-v1 .members-text h2.callout_title_second, .members-v4 .member-content h4{ color: #ffffff !important; } .members-v1 .members-text p,
-
-    .members-v4 .member-content
-
- p{ color: #fafafa !important; }
-
- @media only screen and (max-width: 1200px) {
- #section05{
- 	display: none;
- }
-}
-
-
-
-.bg {
-
-
-		background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)),
-      url("L2.jpg");
-
-height: 90%;
-  margin: 0;
-
-  background-size: cover;
-}
-
-	section.classiera-static-slider .classiera-static-slider-content h1, section.classiera-static-slider-v2 .classiera-static-slider-content h1, section.classiera-simple-bg-slider .classiera-simple-bg-slider-content h1{
-		color:#fff;
-		font-size:46px;
-		font-family:Catamaran !important;
-		font-weight:700;
-		line-height:46px;
-		text-align:;
-		letter-spacing:;
-	}
-	section.classiera-static-slider .classiera-static-slider-content h2, section.classiera-static-slider-v2 .classiera-static-slider-content h2, section.classiera-simple-bg-slider .classiera-simple-bg-slider-content h4{
-		color:#fff;
-		font-size:20px;
-		font-family:Catamaran !important;
-		font-weight:400;
-		line-height:20px;
-		text-align:;
-		letter-spacing:;
-	}
-
-
-	</style>
-	<style type="text/css" title="dynamic-css" class="options-output">h1,
-h1 a{
-font-family:Catamaran;
-line-height:36px;font-weight:700;font-style:normal;color:#232323;font-size:36px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h1,.wf-loading  h1 a{opacity: 0;}.ie.wf-loading h1,.ie.wf-loading  h1 a{visibility: hidden;}
-
-
-::-webkit-scrollbar
-{
-  width: 15px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
-
-}
-
-::-webkit-scrollbar-track
-{
-  background: #232323;
-}
-
-::-webkit-scrollbar-thumb
-{
-	border-radius: 15px;
-
-  background: #a0e418;
-}
-
-
- .content-desktop {display: block;}
-    .content-mobile {display: none;}
-
-    @media screen and (max-width: 768px) {
-
-    .content-desktop {display: none;}
-    .content-mobile {display: block;}
-
-
-
-
-
-.autocomplete-items {
-  position: absolute;
-overflow-y: auto;
-height:100px;
-max-width: 100%;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-
-}
-
-.autocomplete-items div {
-  padding: 5px;
-height: auto;
-  cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
-  border-radius: 5px;
-}
-
-/*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9;
-}
-
-/*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-  background-color: DodgerBlue !important;
-  color: #ffffff;
-}
-
-
-
-
-    }
-
-
-
-</style>
-
-
-	</head>
-
-
-<body class="home page-template page-template-template-landing page-template-template-landing-php page page-id-6 woocommerce-js single-author">
-	
-<link rel="stylesheet" href="./index_files/scrollbar.css" type="text/css" media="all">
-	<header>
-	<section class="topBar topBar-v3 hidden-xs">
-	<div class="container-fluid">
-		<div class="row-fluid">
-			<div class="col-lg-6 col-md-6 col-sm-8">
-							<p>
-					Support:
-					<span><i class="fa fa-envelope-square"></i>support@landscapeduniya.com</span>
-					<span><i class="fa fa-phone-square"></i>9123456789</span>
-				</p>
-						</div>
-			<div class="col-lg-6 col-md-6 col-sm-4">
-							<div class="login-info text-right text-uppercase flip">
-											<a href="http://127.0.0.1:8000/#">Help</a>
-						<a href="http://127.0.0.1:8000/#">							
-							Download App					</a>
-									</div>
-						</div>
-		</div>
-	</div>
-</section><!-- /.topBar -->
-		<!-- NavBar -->
-
-
-		<style type="text/css">
-
-
-					@media screen and (max-width: 400px) {
-    .mobileloc   { display:none; }
-
-    .mobilesearchbut   { display:none; }
-
-
-
-
-}
-
-		</style>
-<section class="classiera-navbar  classieraNavAffix classiera-navbar-v3 affix-top">
-		<div class="container-fluid">
-				<!-- mobile off canvas nav -->
-				<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-light navmenu-fixed-left" role="navigation">
-			<div class="navmenu-brand clearfix">
-				<a href="http://127.0.0.1:8000/">
-											<img src="./index_files/logo.png" alt="LD" style="height: 40px; width: 50px;">
-
-									</a>
-				<button type="button" class="offcanvas-button" data-toggle="offcanvas" data-target="#myNavmenu">
-					<i class="fa fa-times"></i>
-				</button>
-			</div><!--navmenu-brand clearfix-->
-			<div class="log-reg-btn text-center">
-									<a href="http://127.0.0.1:8000/login/?next=/" class="offcanvas-log-reg-btn">
-						Login					</a>
-					<a href="http://127.0.0.1:8000/sendotp/" class="offcanvas-log-reg-btn">
-						Signup					</a>
-							</div>
-			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navmenu-nav">
-<li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a title="Events And Exhibition " href="http://127.0.0.1:8000/eventshome">Events And Exibition </a></li>
-
-
-<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a title="Jobs" href="http://127.0.0.1:8000/jobshome/">Jobs</a></li>
-
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a title="Jobs" href="http://127.0.0.1:8000/buyandsellpage/">Buy And Sell </a></li>
-
-</ul></div>
-		</nav>
-				<!-- mobile off canvas nav -->
-
-
-
-
-	
-
-		<!--Primary Nav-->
-		<nav class="navbar navbar-default classiera-custom-navbar-v1">
-					<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand-custom" href="http://127.0.0.1:8000/">
-									<img class="img-responsive" src="./index_files/logo.png" style="height: 45px; width: 60px; ">
-
-
-								</a>
-			</div><!--navbar-header-->
-					<div class="collapse navbar-collapse visible-lg" id="navbarCollapse">
-
-				<div class="nav navbar-nav navbar-right nav-v3-follow flip">
-
-		
-										<p style="padding-top: 10px; margin-bottom: -10px;">
-
-	<a href="http://127.0.0.1:8000/login/?next=/"> <span style="color: white; font-weight: bold;">Login </span></a> <span style="color: white; font-weight: bold;">|</span>
-						<a href="http://127.0.0.1:8000/sendotp/" style="color: white; font-weight: bold;">Signup</a>
-
-														</p>
-
-
-				</div>
-				<div class="nav navbar-nav navbar-right betube-search flip">
-
-
-<style type="text/css">
-		.button {
-  background-color: #a0e418; /* Green */
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  margin: 4px 2px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-}
-
-
-
-.button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-.buttonheader {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: -5px 10px;
-  cursor: pointer;
-    background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
-}
-
-
-.buttonheader2 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-
-  padding: 7px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 3px 10px;
-  cursor: pointer;
-    background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
-}
-
-</style>
-
-
-
-
-				</div>
-							<ul id="menu-main-menu-1" class="nav navbar-nav navbar-right nav-margin-top flip nav-ltr">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://127.0.0.1:8000/eventshome/"><button class=" buttonheader" style="font-weight: 600; border-radius: 5px;"> Events &amp; Exhibition </button></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://127.0.0.1:8000/jobshome/"><button class=" buttonheader" style="font-weight: 600; border-radius: 5px;"> Jobs </button></a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://127.0.0.1:8000/buyandsellpage/"><button class=" buttonheader" style="font-weight: 600; border-radius: 5px;"> Buy &amp; Sell </button></a></li>
-
-</ul>							</div><!--collapse navbar-collapse visible-lg-->
-		</nav>
-
-
-
-
-
-
-
-
-
-
-
-		<!--Primary Nav-->
-		</div><!--container-->
-</section>
-<!-- NavBar -->	<!-- Mobile App button -->
-	<div class="mobile-submit affix" style="">
-        <ul class="list-unstyled list-inline mobile-app-button">
-		            <li>
-                <a href="http://127.0.0.1:8000/login/?next=/">
-                    <i class="fa fa-sign-in"></i>
-                    <span>Login</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://127.0.0.1:8000/#">
-                    <i class="fa fa-edit"></i>
-                    <span>Submit Ad</span>
-                </a>
-            </li>
-            <li>
-                <a href="http://127.0.0.1:8000/sendotp/">
-                    <i class="fa fa-user-o"></i>
-                    <span>Get Registered</span>
-                </a>
-            </li>
-		         </ul>
-    </div>
-	<!-- Mobile App button -->
-	</header>
-
-	<style type="text/css">
-		
-		@media screen and (max-width: 400px) {
-    .mobileloc   { display:none; }
-
-    .mobilesearchbut   { display:none; }
-
-
-
-   
-}
-
-
-@media screen and (min-width: 400px) {
-    .mobsearchicon {
-    	 display:none;
-    }
-   
-}
-
-.f {
-
-	font-family : 'Montserrat',sans-serif; 
-	font-size: 15px;
-	  color: black; 
-}
-
-.lowerRight {
-	margin-top: 40px;
-
-}
- 
-
-	</style>
-
-
-
-
-
-
-
-
-
-
-	<!-- back to top -->
-	<a href="http://127.0.0.1:8000/#" id="back-to-top" title="Back to top" class="social-icon social-icon-md"><i class="fa fa-angle-double-up fa-3x removeMargin"></i></a>
-
-	
-
-
-
-
-<section class="classiera-simple-bg-slider bg" style="height: 90vh;">
-	<div class="classiera-simple-bg-slider-content text-center">
-		<br> <br> <p style="font-family : &#39;Montserrat&#39;,sans-serif;  font-size: 320%; line-height: 1.0; color: #fff;"> <span style="font-size: 55px; font-weight: 600;">Welcome</span> <br>  <span style="font-size: 30px;">to</span><span class="color" style="font-weight: 600; font-size: 1.4em;"> <br>Landscape Duniya</span></p> <br>
-
-	<section class="search-section search-section-v4" style="align-content: center;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-
-<!--Locations-->
-
-
-<style>
-
-
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-  font-family : 'Montserrat',sans-serif;
-
-}
-
-
-
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-  cursor: pointer;
-}
-
-.autocomplete-items {
-  position: absolute;
-overflow-y: auto;
-height:200px;
-width: 100%;
-  border-bottom: none;
-  border-top: none;
-  z-index: 1099;
-  /*position the autocomplete items to be the same width as the container:*/
-
-}
-
-.autocomplete-items div {
-  padding: 5px;
-height: auto;
-  cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
-  border-radius: 5px;
-}
-
-/*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9;
-}
-
-/*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-  background-color: DodgerBlue !important;
-  color: #ffffff;
-}
-
-
-
-
-
-.dropbtn{
-  font-family : 'Montserrat',sans-serif;
-  font-weight: 600;
-
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-    max-width: 300px;
-  font-size: 13px;
-
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 5px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-      overflow-x: hidden;
-
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #a0e418;
-}
-</style>
-
-
-
-					<div class="form-group col-md-4" style="width: 400px;">
-						<!--Searchkeyword-->
-						<div class="form-icon inner-addon left-addon autocomplete">
-							<i class="form-icon form-icon-size-small fa fa-search" style="font-size: 20px; color: #a0e418;"></i>
-							<input type="text" style="height: 45px;" id="myInput" class="form-control form-control-sm" placeholder="Enter keyword..." data-error="Please Type some words..!" name="q" value="">
-
-							<span class="classieraSearchLoader" style="display: none;"><img src="./index_files/loader.gif" alt="classiera loader"></span>
-						</div>
-						<!--Searchkeyword-->
-					</div>
-
-
-
-										<div class="form-group col-md-4" style="width: 250px;">
-                       <div class="form-icon inner-addon left-addon">
-							<i class="form-icon form-icon-size-small fa fa-map-marker" style="font-size: 20px; color: #a0e418;"></i>
-						   <input type="text" style="height: 45px;" id="getCity" class="form-control form-control-sm" placeholder="Location" name="l" value="">
-								<!--<a href="#" class="form-icon form-icon-size-small" title="Click here to get your own location">-->
-								
-							                        </div>
-                    </div>
-
-
- <div class="col-md-2">
-	 <a href="search1.html"> <button class="btn btn-primary" type="submit" name="search" value="Search" style=" height: 45px; ">Search</button> </a>
- </div>
-
-
-
-
-									<div class="form-group col-md-4" style="width: 300px;">
-                       <div class="form-icon inner-addon left-addon">
-
-						     <div class="dropdown">
-    <button class="dropbtn buttonheader2" style="border-radius: 15px;">POPULAR CATEGORIES
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" style="height:250px;overflow: auto;
-  white-space: nowrap;">
-		
-       <a href="http://127.0.0.1:8000/subcategory/1">1) Architect Designer &amp; Consultant</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/2">2) Development &amp; Maintenance</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/3">3) Furniture, Artifacts &amp; Sculptures</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/4">4) Soil Media &amp; Conditioners</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/5">5) Pesticides, Fungicides &amp; Ferti.</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/6">6) Pots &amp; Accessories</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/7">7) Rocks &amp; Pebbles</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/8">8) Drainage System &amp; Accessories</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/9">9) Irrigation System</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/10">10) Green Wall</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/11">11) Green House Construction</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/12">12) Rainwater Harvesting</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/13">13) Hydroponic &amp; Aeroponics</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/14">14) Tools Equipments and Implements</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/15">15) Tree Transplanting &amp; Accessories</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/16">16) Seed, Seedling &amp; Sapling</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/17">17) Play Equipment's &amp; Water Slides</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/18">18) Open Gym Equipment's</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/19">19) Environmentalist, Ecologist &amp; Arborologist</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/20">20) Artificial Flower Trees &amp; Plants</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/21">21) Pools &amp; Fountains</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/22">22) Sports Field &amp; Golf Course</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/23">23) Bamboos &amp; Grasses</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/24">24) Bromeliad, Cacti &amp; Succulents</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/25">25) Climbers &amp; Creepers</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/26">26) Fern &amp; Ground Covers</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/27">27) Fruit Plants</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/28">28) Indoor Plants</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/29">29) Lawns</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/30">30) Medicinal Plants</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/31">31) Shrubs</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/32">32) Lilies &amp; Bulbous</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/33">33) Orchids</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/34">34) Palms &amp; Cycads</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/35">35) Roses (Climbers, Floribundas, Hybrid Teas, Miniatures)</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/36">36) Spice Plants &amp; Edible Herbs</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/37">37) Water &amp; Aquatic Plants</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/38">38) Indigenous Plant &amp; Trees (Native)</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/39">39) Flowering Pot Plants / Seasonal Flowering Plants</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/40">40) Books &amp; Journals</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/41">41) Trees</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/42">42) Import &amp; Export</a>
-      
-       <a href="http://127.0.0.1:8000/subcategory/43">43) Lighting</a>
-      
-    </div>
-  </div>
-							<!--<a href="#" class="form-icon form-icon-size-small" title="Click here to get your own location">-->
-								
-							                        </div>
-                    </div>
-										<!--Locations-->
-
-
-
-
-
-
-
-				</form>
-
-</div><!--col-md-12-->
-<br>
-
-
-		</div><!--row-->
-								<section id="section05" class="demo">
-
-  <a href="http://127.0.0.1:8000/#section06"><span></span></a>
-
-</section>
-
-
-	</div><!--container-->
-</section><!--search-section--><!-- premium Ads -->
-
-	</div><!--classiera-simple-bg-slider-content-->
-	<div id="section06"></div>
-</section><!--classiera-simple-bg-slider-->
-
-
-
-<!-- premium Ads --><section class="section-pad category-v3 border-bottom" style="background-color: white;">
-	<div class="section-heading-v1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 center-block">
-                    <p class="text-uppercase" style="font-family : &#39;Montserrat&#39;,sans-serif;  font-size: 30px; color: black; margin-top: -15px; line-height: 1.6;text-shadow: 1px 1px 2px black;">ALL &nbsp; LANDSCAPE &nbsp; CATEGORIES</p>
-
-
-
-
-                </div><!--col-lg-7-->
-            </div><!--row-->
-        </div><!--container-->
-    </div><!--section-heading-v1-->
-
-
-   <div class="tz-gallery">
-
-        <div class="row">
-
-            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/39">  <img src="./index_files/39.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Flowering Pot Plants / Seasonal Flowering Plants         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/39" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/37">  <img src="./index_files/37.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Water &amp; Aquatic Plants         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/37" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/38">  <img src="./index_files/38.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Indigenous Plant &amp; Trees (Native)         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/38" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/40">  <img src="./index_files/40.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Books &amp; Journals         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/40" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/25">  <img src="./index_files/25.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Climbers &amp; Creepers         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/25" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/3">  <img src="./index_files/3.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Furniture, Artifacts &amp; Sculptures         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/3" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/11">  <img src="./index_files/11.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Green House Construction         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/11" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/12">  <img src="./index_files/12.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Rainwater Harvesting         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/12" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/14">  <img src="./index_files/14.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Tools Equipments and Implements         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/14" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/10">  <img src="./index_files/10.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Green Wall         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/10" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/15">  <img src="./index_files/15.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Tree Transplanting &amp; Accessories         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/15" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-             <div class="col-md-2 col-sm-4 col-xs-12">
-                <div class="thumbnail" style="height: 270px;">
-
-
-
-                      <a href="http://127.0.0.1:8000/subcategory/31">  <img src="./index_files/31.jpg" alt="Park" style="height: 130px; width: 100%;">
-                    </a>
-
-
-                     <div class="caption" style="height: 50px;">
-                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Shrubs         </p>
-
-
-                    </div>
- <div align="center" style="position: relative;">
-                        	<a href="http://127.0.0.1:8000/subcategory/31" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
-                        </div>
-                </div>
-
-            </div>
-			            
-
-
-
-
-
-
-</div>
-   </div>
-
-        <br>
-
-
-
-
-
-
-<button onclick="location.href=&#39;/allcategory/&#39;" class="button button2" style=" padding: 10px;margin:auto; display:block; background-color: #a0e418; font-size: 20px;"><a style="color: #fff;">Click Here For More Categories</a> </button>
-
-
-
-<style type="text/css">
-
-	/* Full-width input fields */
-.qfinp {
-  width: 40%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-border:2px solid #4CAF50;
-border-radius: 10px;
-
-
-
-}
-
-.qfinp:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-
-@media screen and (max-width: 600px) {
-  .qfinp {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-</style>
-
-
-
-
-
-
-</section>
-
-
-
-<section class="members-v2 content-desktop" style="background-color: white; ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-sm-6 hidden-xs hidden-sm">
-				<img src="./index_files/quote.jpg" height="950" style="margin-left: -20%;">
-
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" style="margin-left: -42%; width: 1100px;">
-				<div class="members-text text-left flip" style=" background-color: white; margin-top:50px; border: 2px solid #4CAF50; margin-right: 50px;">
-
-
-<br>
-
-					<h1 style="margin-left: 40px; text-align: center;">Post requirement  and we'll do the rest for you.</h1>
-
-
-
-										<form method="POST" enctype="multipart/form-data"><input type="hidden" name="csrfmiddlewaretoken" value="DlcrKyisZtcTBRWlp9IScaKxbBNvgNME3tuEtZzjmKRhuW4Ieqa4M4ILrCUxBXg8">
-  <div class="container">
-
-
-
-    <!--<input type="text" class="qfinp" placeholder="Enter Product / Service Name" name="email" required> <br>-->
-
-        <!--<input type="text" class="qfinp" placeholder="Enter Your Name" name="email" required> <br>-->
-
-
-    <!--<input type="text" class="qfinp" placeholder="Enter Your Contact Number" name="email" required> <br>-->
-
-<input type="text" name="requirements" class="qfinp" placeholder="Enter Product/Requirements/Service Name" required="" id="id_requirements">&nbsp; &nbsp; &nbsp;
-<input type="text" name="required_at" class="qfinp" placeholder="Required At Location:" required="" id="id_required_at"><br>
-<input type="number" name="approx_budget" class="qfinp" placeholder="Approximate Budget" id="id_approx_budget"> &nbsp; &nbsp; &nbsp;
-
-
-<input type="text" name="name" class="qfinp" placeholder="Enter Your Name" required="" id="id_name"> &nbsp; &nbsp; &nbsp;
-<input type="number" name="mobile" class="qfinp" placeholder="Enter Your Contact Number" required="" id="id_mobile"> &nbsp; &nbsp; &nbsp;
-<input type="text " name="email" class="qfinp" placeholder="Email" required="" id="id_email">&nbsp; &nbsp; &nbsp;
-<input type="text " name="address" class="qfinp" placeholder="Address" required="" id="id_address"> &nbsp; &nbsp; &nbsp;
-<input type="text " name="city" class="qfinp" placeholder="City" required="" id="id_city">&nbsp; &nbsp; &nbsp;
-<input type="text " name="state" class="qfinp" placeholder="State" required="" id="id_state">&nbsp; &nbsp; &nbsp;
-<input type="number " name="pin" class="qfinp" placeholder="Pin Code" required="" id="id_pin">
-	  <br>
- <label for="pdf">Upload Requirement :</label>
-<input type="file" class="qfinp" id="pdf" name="pdf">
-
-
-
-
-  </div>
-<br>
-	<button class="button button2" type="submit" value="Submit" style="margin:auto; display:block; background-color: black;">Submit </button>
-
-</form>
-					<br>
-									</div>
-
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-<section class="members-v2 content-mobile " style="background-color: white; ">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-sm-6 hidden-xs hidden-sm">
-				<img src="./index_files/quote.jpg" height="950" style="margin-left: -20%;">
-
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" style=" width: 100%;">
-				<div class="members-text text-left flip" style=" background-color: white; margin-top:50px; border: 2px solid #4CAF50; margin-right: 50px;">
-
-
-<br>
-
-					<h1 style=" text-align: center;">Post requirement  and we'll do the rest for you.</h1>
-
-
-
-										<form id="myForm" method="POST" novalidate="true" enctype="multipart/form-data"><input type="hidden" name="csrfmiddlewaretoken" value="DlcrKyisZtcTBRWlp9IScaKxbBNvgNME3tuEtZzjmKRhuW4Ieqa4M4ILrCUxBXg8">
-  <div class="container">
-
-
-
-    <!--<input type="text" class="qfinp" placeholder="Enter Product / Service Name" name="email" required> <br>-->
-
-        <!--<input type="text" class="qfinp" placeholder="Enter Your Name" name="email" required> <br>-->
-
-
-    <!--<input type="text" class="qfinp" placeholder="Enter Your Contact Number" name="email" required> <br>-->
-
-<input type="text" name="requirements" class="qfinp" placeholder="Enter Product/Requirements/Service Name" required="" id="id_requirements">
-<input type="text" name="required_at" class="qfinp" placeholder="Required At Location:" required="" id="id_required_at"><br>
-<input type="number" name="approx_budget" class="qfinp" placeholder="Approximate Budget" id="id_approx_budget">
-
-
-<input type="text" name="name" class="qfinp" placeholder="Enter Your Name" required="" id="id_name">
-<input type="number" name="mobile" class="qfinp" placeholder="Enter Your Contact Number" required="" id="id_mobile">
-<input type="text " name="email" class="qfinp" placeholder="Email" required="" id="id_email">
-<input type="text " name="address" class="qfinp" placeholder="Address" required="" id="id_address">
-<input type="text " name="city" class="qfinp" placeholder="City" required="" id="id_city">
-<input type="text " name="state" class="qfinp" placeholder="State" required="" id="id_state">
-<input type="number " name="pin" class="qfinp" placeholder="Pin Code" required="" id="id_pin">
-	  	  <br>
- <label for="pdf">Upload Requirement :</label>
-<input type="file" class="qfinp" id="pdf" name="pdf">
-
-
-
-
-  </div>
-											<br>
-
-	<button class="button button2" type="submit" onclick="submit()" value="Reset Form" style="margin:auto; display:block; background-color: black;">Submit </button>
-
-</form>
-					<br>
-									</div>
-
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-<section class="members-v2">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-sm-6 hidden-xs hidden-sm">
-
-<img src="./index_files/down.svg" height="500">
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 60px;">
-				<div class="members-text text-left flip">
-
-
-
-
-					<p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 25px; font-weight: 600; text-align: center; color: black; padding-top: 10px">Get Robot App
-
-</p>
-					<p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 15px; font-weight: 300; text-align: center; color: black; padding-top: 10px">Search for products / services and connect with verified sellers on the go!</p>
-
-
-
-										<form action="http://127.0.0.1:8000/action_page.php">
-  <div class="container">
-
-
-
-    <input type="text" class="qfinp" placeholder="Enter Mobile Number" name="email" required="">
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-</form>
-<p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 15px; font-weight: 300; text-align: center; color: black; padding-top: 10px">We will send you a link, open it on your phone to download the App</p>
-
-
-
-<button class="button button2" style="margin:auto; display:block; background-color: black;">Send Link </button>
-									</div>
-
-
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-
-		  
-  <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">
-                Landscape Duniya
-                 brings you accurate and authentic information on every aspect of landscaping
-                that you can get and grow in India. landscapeduniya.com contains a wide range of
-                information along with easy search and presentation tools.</p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6> Popular Categories</h6>
-            <ul class="footer-links">
-                <li><a href="http://127.0.0.1:8000/search/?q=Garden+Architects&amp;l=" class="w3-bar-item sidebar"> Garden Architects</a></li>
-                <li><a href="http://127.0.0.1:8000/search/?q=Landscape+Architects&amp;l=" class="w3-bar-item  sidebar"> Landscape Architects</a></li>
-                <li> <a href="http://127.0.0.1:8000/search/?q=Landscape+Designer&amp;l=" class="w3-bar-item sidebar"> Landscape Designer </a></li>
-                <li><a href="http://127.0.0.1:8000/search/?q=Horticulture+Consultant&amp;l=" class="w3-bar-item sidebar">  Horticulture Consultant </a></li>
-                <li><a href="http://127.0.0.1:8000/search/?q=Landscape+Consultant&amp;l=" class="w3-bar-item sidebar">  Landscape Consultant</a></li>
-                <li><a href="http://127.0.0.1:8000/search/?q=Garden+Consultant&amp;l=" class="w3-bar-item sidebar">  Garden Consultant </a></li>
-            </ul>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="http://127.0.0.1:8000/#">About Us</a></li>
-              <li><a href="http://127.0.0.1:8000/#">Contact Us</a></li>
-              <li><a href="http://127.0.0.1:8000/#">Privacy Policy</a></li>
-              <li><a href="http://127.0.0.1:8000/#">Sitemap</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright © 2017 All Rights Reserved by
-         <a href="http://127.0.0.1:8000/#">Landscape Duniya</a>.
-            </p>
-          </div>
-
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="http://127.0.0.1:8000/#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="http://127.0.0.1:8000/#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="dribbble" href="http://127.0.0.1:8000/#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a class="linkedin" href="http://127.0.0.1:8000/#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-</footer>
-  <style>
-      .site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-.social-icons a.dribbble:hover
-{
-  background-color:#ea4c89
-}
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-  </style>
-
-
-	<!-- back to top -->
-	<!--<a href="#" id="back-to-top" title="Back to top" class="social-icon social-icon-md"><i class="fas fa-arrow-up"></i></a>-->
-
-
-
-
+<!-- saved from url=(0071)https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/ -->
+<html lang="en-US"><head itemscope="" itemtype="http://schema.org/WebSite"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./index_files/analytics.js.download" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app102.us.archive.org';v.server_ms=127;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./index_files/ait-client-rewrite.js.download" charset="utf-8"></script>
 <script type="text/javascript">
-document.getElementById("uploadBtn").onchange = function () {
-
-document.getElementById("uploadFile").value = this.value;
-};
-
-document.getElementById("uploadBtn2").onchange = function () {
-
-document.getElementById("uploadFile2").value = this.value;
-};
-
-function submit() {
-  /*Put all the data posting code here*/
- document.getElementById("myForm").reset();
-}
+WB_wombat_Init("https://web.archive.org/web", "20181020004119", "www.pushpamtours.com:80");
 </script>
+<script type="text/javascript" src="./index_files/wbhack.js.download" charset="utf-8"></script>
+<script type="text/javascript">
+__wbhack.init('https://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="./index_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="./index_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
 
-<script type="text/javascript" src="./index_files/SubcatSuggestion.js.download"></script>
 
-<script type="text/javascript" src="./index_files/jquery_004.js.download"></script>
-<script type="text/javascript" src="./index_files/bootstrap.js.download"></script>
-<script type="text/javascript" src="./index_files/bootstrap-dropdownhover.js.download"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>Pushpam Tours – Luxurious Travel At Affordable Rate</title>
+<link rel="dns-prefetch" href="https://web.archive.org/web/20181020004119/http://maxcdn.bootstrapcdn.com/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20181020004119/http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://web.archive.org/web/20181020004119/http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Pushpam Tours » Feed" href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Pushpam Tours » Comments Feed" href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/comments/feed/">
+	<script src="./index_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="fl-builder-layout-156-css" href="./index_files/156-layout.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./index_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" id="odometer-css" href="./index_files/odometer.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./index_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="travel-agency-companion-css" href="./index_files/travel-agency-companion-public.css" type="text/css" media="all">
+<style id="travel-agency-companion-inline-css" type="text/css">
 
+                    .activities:after{
+                        background: url( https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/plugins/travel-agency-companion/includes/images/img2.jpg ) no-repeat;
+                    }
+</style>
+<link rel="stylesheet" id="wp-travel-engine-css" href="./index_files/wp-travel-engine-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="smoothness-style-css" href="./index_files/datepicker-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css" href="./index_files/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="trip-gallery-css" href="./index_files/wpte-gallery-public.css" type="text/css" media="all">
+<link rel="stylesheet" id="travel-agency-google-fonts-css" href="./index_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="travel-agency-style-css" href="./index_files/style.css" type="text/css" media="all">
 <script type="text/javascript" src="./index_files/jquery.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var tac_data = {"rtl":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/travel-agency-companion-public.js.download"></script>
+<script type="text/javascript" src="./index_files/custom.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WTEAjaxData = {"ajaxurl":"https:\/\/web.archive.org\/web\/20181020004119\/http:\/\/www.pushpamtours.com\/wp-admin\/admin-ajax.php"};
+var rtl = {"enable":"0"};
+var WPMSG_OBJ = {"ajax":{"success":"Cart sucessfully updated!","failed":"Cart update failed!"}};
+var Url = {"paypalurl":"https:\/\/web.archive.org\/web\/20181020004119\/https:\/\/www.paypal.com\/cgi-bin\/webscr","normalurl":"https:\/\/web.archive.org\/web\/20181020004119\/http:\/\/www.pushpamtours.com\/travelers-information\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/wp-travel-engine-public.js.download"></script>
+<script type="text/javascript" src="./index_files/owl.carousel.js.download"></script>
+<script type="text/javascript" src="./index_files/wpte-gallery-public.js.download"></script>
+<script type="text/javascript" src="./index_files/wp-travel-engine-travelers-number.js.download"></script>
+<link rel="https://api.w.org/" href="http://www.pushpamtours.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.pushpamtours.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.pushpamtours.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.6">
+<link rel="canonical" href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/">
+<link rel="shortlink" href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/">
+<link rel="alternate" type="application/json+oembed" href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.pushpamtours.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.pushpamtours.com%2F&amp;format=xml">
+<link rel="icon" href="https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-logo-1-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-logo-1-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-logo-1-180x180.jpg">
+<meta name="msapplication-TileImage" content="http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-logo-1-270x270.jpg">
 
-<script type="text/javascript" src="./index_files/classiera.js.download"></script>
-<script type="text/javascript" src="./index_files/jquery-ui.js.download"></script>
+</head>
+
+<body class="home page-template-default page page-id-156 wp-custom-logo fl-builder" itemscope="" itemtype="http://schema.org/WebPage"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="./index_files/timestamp.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./index_files/graph-calc.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./index_files/auto-complete.js.download" charset="utf-8"></script>
+<script type="text/javascript" src="./index_files/toolbar.js.download" charset="utf-8"></script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+<script type="text/javascript">
+__wm.bt(600,27,25,2,"web","http://www.pushpamtours.com/","2018-10-20",1996,"/_static/",['css/banner-styles.css','css/iconochive.css']);
+</script><div class="wb-autocomplete-suggestions " style="left: 163px; top: 22px; width: 666px;"></div>
+<!-- END WAYBACK TOOLBAR INSERT -->
+	
+    <div id="page" class="site">
+        <header class="site-header" itemscope="" itemtype="http://schema.org/WPHeader">
+		
+        <div class="header-holder">			
+                        <div class="header-t">
+				<div class="container">
+					    <ul class="social-networks">
+    	            <li><a href="https://web.archive.org/web/20181020004119/https://www.facebook.com/PushpamTours/" target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a></li>    	   
+    	            <li><a href="https://web.archive.org/web/20181020004119/https://www.instagram.com/pushpam_tours/" target="_blank" rel="nofollow"><i class="fa fa-instagram"></i></a></li>    	   
+    		</ul>
+    					<div class="tools">
+						        <div class="form-section">
+    		<a href="javascript:void(0);" id="btn-search"><span class="fa fa-search"></span></a>
+    		<div class="form-holder">
+    			<form role="search" method="get" class="search-form" action="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>    		</div>
+    	</div><!-- .form-section -->
+        						
+					</div>                     
+				</div>
+			</div> <!-- header-t ends -->
+                        
+            <div class="header-b">
+				<div class="container">
+					<div class="site-branding" itemscope="" itemtype="http://schema.org/Organization">
+						<a href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="59" height="44" src="./index_files/cropped-imageedit_2_5410320065-e1530536346840.png" class="custom-logo" alt="Pushpam Tours" itemprop="logo"></a>                        <div class="text-logo">
+							                                <h1 class="site-title" itemprop="name"><a href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/" rel="home" itemprop="url">Pushpam Tours</a></h1>
+                                            				<p class="site-description" itemprop="description">Luxurious Travel At Affordable Rate</p>
+                			                        </div>
+            		</div><!-- .site-branding -->
+                    
+                                        <div class="right">
+                        <span class="phone-label">Call us, we are open 24/7</span><a href="tel:919773109929" class="tel-link"><span class="phone">(+91) 9773109929</span></a>                    </div>
+                                        
+				</div>
+			</div> <!-- header-b ends -->
+                        
+		</div> <!-- header-holder ends -->
+		
+        <div class="nav-holder">
+			<div class="container">
+                <a href="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/" class="home-link"><i class="fa fa-home"></i></a>
+                <div id="primary-toggle-button">MENU<i class="fa fa-bars"></i></div>
+                <nav id="site-navigation" class="main-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        			<div class="menu-primary-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-156 current_page_item menu-item-170"><a href="index.html">Home</a></li>
+<li id="menu-item-432" class="menu-item menu-item-type-taxonomy menu-item-object-activities menu-item-432"><a href="all trips.html">All Trips</a></li>
+<li id="menu-item-426" class="menu-item menu-item-type-taxonomy menu-item-object-trip_types menu-item-426"><a href="domestic.html">Domestic</a></li>
+<li id="menu-item-427" class="menu-item menu-item-type-taxonomy menu-item-object-trip_types menu-item-427"><a href="international.html">International</a></li>
+<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="customize.html">Customize Package</a></li>
+<li id="menu-item-671" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-671"><a href="prospectus.html">Tours-2018</a></li>
+<li id="menu-item-172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-172"><a href="about us.html">About Us</a></li>
+<li id="menu-item-171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-171"><a href="contact us.html">Contact Us</a></li>
+</ul></div>        		</nav><!-- #site-navigation --> 
+			</div>
+		</div> <!-- nav-holder ends -->
+        
+	</header> <!-- header ends -->
+      
+<div class="banner">
+	<div id="wp-custom-header" class="wp-custom-header"><img src="./index_files/cropped-adventure-boy-couple-450441.jpg" width="1920" height="680" alt="Pushpam Tours" srcset="https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-adventure-boy-couple-450441.jpg 1920w, https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-adventure-boy-couple-450441-300x106.jpg 300w, https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-adventure-boy-couple-450441-768x272.jpg 768w, https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-adventure-boy-couple-450441-1024x363.jpg 1024w, https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/uploads/2018/06/cropped-adventure-boy-couple-450441-169x60.jpg 169w" sizes="(max-width: 1920px) 100vw, 1920px"></div>	
+        <div class="form-holder">
+    		<div class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;"><h1>Find Your Best Holiday</h1><div class="banner-content"><p>Find great adventure holidays and activities around the planet.</p>
+</div></div><div class="banner-form"><form role="search" method="get" class="search-form" action="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form></div>    	</div>            
+        </div> <!-- banner ends -->
+<section class="about" id="about_section">
+	<div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+		<div class="row">
+			<div class="text-holder no-code"><h2 class="title">About Pushpam Tours and Travels</h2><div class="content"><p>Pushpam Tours is a tourism company established in Mumbai. Pushpam Tours was established on May 1, 1993. At the beginning we worked continuously on Maharashtra and Konkan-Goa Sectors.</p>
+<p>In the beginning we preferred tours such as Mahanarashtra Darshan, Konkan-Goa and Ashtavinayak Yatra. With the support and encouragement of the customers, all these trips were successful. Looking at the increament in customers response and growing efficiency of Pushpam Tours, we took the next step with successfully arranging Kerala-Kanyakumari tour. After that, we organized trips to beautiful sectors like Rajasthan, Himachal, Darjeeling, Rameshwaram, Hyderabad, Andaman, Kashmir, Leh-Ladakh and we are now working on 26 domestic sectors.</p>
+</div><a href="about us.html" class="btn-more">Know More</a></div>            
+		</div>
+	</div>
+</section>
+<section class="activities" id="activities_section">
+	    <header class="section-header">        
+        <div class="holder">
+    		<h2 class="section-title">Travel Services</h2><div class="section-content"><p>Whether it's a corporate tour, romantic delight, adventurous junkies or just a chota break, we have ample of tour choices to suit the most of your taste, requirement and budget. So, hurry up and book a holiday with Pushpam Tours!</p>
+
+    			<br>
+    			<br>
+</div>            
+    	</div>
+    </header>
+    	
+       </div>
 
 
+    </div>
+    </section>
+<section id="whyus_section" class="our-features" style="background:url(https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/plugins/travel-agency-companion/includes/images/img13.jpg) no-repeat">
+		
+        <header class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+		<h2 class="section-title">Why Book with Us</h2><div class="section-content"><p>At Pushpam Tours, we work hard to ensure we find you the most exciting, intriguing and amazing destinations and experiences that work within your budget.</p>
+</div>            
+	</header>
+        
+    	<div class="features-holder wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="grid">			
+		            
+				<div class="col">
+					                    <div class="icon-holder">
+						<svg width="60" height="60">
+                            <circle cx="14" cy="29" r="29" transform="rotate(-90, 22, 22)"></circle>
+                        </svg>
+                        <i class="fa fa-check"></i>
+					</div>
+					                                        <div class="text-holder">
+						                        <h3 class="title">
+                            Personal Touch                        </h3>
+                        <p>Travel arrangements are designed to give you a tailored travel experience based on your interests and dreams. </p>
+					</div>
+                    				</div>
+                        
+				<div class="col">
+					                    <div class="icon-holder">
+						<svg width="60" height="60">
+                            <circle cx="14" cy="29" r="29" transform="rotate(-90, 22, 22)"></circle>
+                        </svg>
+                        <i class="fa fa-check"></i>
+					</div>
+					                                        <div class="text-holder">
+						                        <h3 class="title">
+                            100% Customizable                        </h3>
+                        <p>We'll work together to customize your trip to meet your exact requirement so that you have a memorable trip.</p>
+					</div>
+                    				</div>
+                        
+				<div class="col">
+					                    <div class="icon-holder">
+						<svg width="60" height="60">
+                            <circle cx="14" cy="29" r="29" transform="rotate(-90, 22, 22)"></circle>
+                        </svg>
+                        <i class="fa fa-check"></i>
+					</div>
+					                                        <div class="text-holder">
+						                        <h3 class="title">
+                            Local Experts. Middle-man Free Pricing                        </h3>
+                        <p>We're a local travel agency. When you book with us, you get best possible price, which is middle-man free.</p>
+					</div>
+                    				</div>
+                        
+				<div class="col">
+					                    <div class="icon-holder">
+						<svg width="60" height="60">
+                            <circle cx="14" cy="29" r="29" transform="rotate(-90, 22, 22)"></circle>
+                        </svg>
+                        <i class="fa fa-check"></i>
+					</div>
+					                                        <div class="text-holder">
+						                        <h3 class="title">
+                            No Hidden Charges                        </h3>
+                        <p>We don't add hidden extras cost. All trips include travel permit, lodging and fooding. There are no surprises with hidden costs.</p>
+					</div>
+                    				</div>
+                        
+				<div class="col">
+					                    <div class="icon-holder">
+						<svg width="60" height="60">
+                            <circle cx="14" cy="29" r="29" transform="rotate(-90, 22, 22)"></circle>
+                        </svg>
+                        <i class="fa fa-check"></i>
+					</div>
+					                                        <div class="text-holder">
+						                        <h3 class="title">
+                            Hassle-free Travel Planning                        </h3>
+                        <p>With our extensive travel experience, we will work to make your planning and travel as care-free as possible giving you more enjoyment at your destination. </p>
+					</div>
+                    				</div>
+                        
+				<div class="col">
+					                    <div class="icon-holder">
+						<svg width="60" height="60">
+                            <circle cx="14" cy="29" r="29" transform="rotate(-90, 22, 22)"></circle>
+                        </svg>
+                        <i class="fa fa-check"></i>
+					</div>
+					                                        <div class="text-holder">
+						                        <h3 class="title">
+                            All the Little Details                        </h3>
+                        <p>As experienced professionals, we will help you with the important and often over-looked details to further enhance your travel.</p>
+					</div>
+                    				</div>
+                    </div>
+	</div>
+            
+</section>
+<section class="featured-trip" id="featured_section">
+	<div class="container">
+		
+                <header class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+			<h2 class="section-title">Featured Trip</h2><div class="section-content"><p>Book your perfect Domestic and International travel package from a wide range of vacation packages available.</p>
+</div>		</header>
+                
+        
+                    <div class="grid wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+    						
+            			<div class="col">            				
+                            <div class="img-holder">
+            					<a href="nepal.html">
+                                    <img width="410" height="250" src="./index_files/pexels-photo-750895-410x250.jpeg" class="attachment-travel-agency-blog size-travel-agency-blog wp-post-image" alt="nepal"  sizes="(max-width: 410px) 100vw, 410px">                                </a>
+                                <span class="price-holder"><span>₹23,500</span></span>            				</div>            				
+                            <div class="text-holder">
+            					<h3 class="title"><a href="nepal.html">Nepal</a></h3>
+            					<div class="meta-info">            						
+                                    <span class="time"><i class="fa fa-clock-o"></i>8 Days - 7 Nights</span>                        
+            					</div>
+            					                                <div class="btn-holder">
+            						<a href="nepal.html" class="btn-more">View Detail</a>
+            					</div>
+                                            				</div>
+            			</div>
+            						
+            			<div class="col">            				
+                            <div class="img-holder">
+            					<a href="maldives.html">
+                                    <img width="410" height="250" src="./index_files/pexels-photo-221455-410x250.jpeg" class="attachment-travel-agency-blog size-travel-agency-blog wp-post-image" alt="Maldives"  sizes="(max-width: 410px) 100vw, 410px">                                </a>
+                                <span class="price-holder"><span>₹80,000</span></span>            				</div>            				
+                            <div class="text-holder">
+            					<h3 class="title"><a href="maldives.html">Maldives</a></h3>
+            					<div class="meta-info">            						
+                                    <span class="time"><i class="fa fa-clock-o"></i>4 Days - 3 Nights</span>                        
+            					</div>
+            					                                <div class="btn-holder">
+            						<a href="maldives.html" class="btn-more">View Detail</a>
+            					</div>
+                                            				</div>
+            			</div>
+            						
+            			<div class="col">            				
+                            <div class="img-holder">
+            					<a href="saurashtra.html">
+                                    <img width="410" height="250" src="./index_files/kutch-1311639_640-410x250.jpg" class="attachment-travel-agency-blog size-travel-agency-blog wp-post-image" alt="SAURASHTRA GUJRAT"  sizes="(max-width: 410px) 100vw, 410px">                                </a>
+                                <span class="price-holder"><span>₹19,500</span></span>            				</div>            				
+                            <div class="text-holder">
+            					<h3 class="title"><a href="saurashtra.html">Saurashtra</a></h3>
+            					<div class="meta-info">            						
+                                    <span class="time"><i class="fa fa-clock-o"></i>7 Days - 6 Nights</span>                        
+            					</div>
+            					                                <div class="btn-holder">
+            						<a href="saurashtra.html" class="btn-more">View Detail</a>
+            					</div>
+                                            				</div>
+            			</div>
+            						
+            			<div class="col">            				
+                            <div class="img-holder">
+            					<a href="glimpse of sikkim.html">
+                                    <img width="410" height="250" src="./index_files/sikkim-646387_640-410x250.jpg" class="attachment-travel-agency-blog size-travel-agency-blog wp-post-image" alt="sikkim"  sizes="(max-width: 410px) 100vw, 410px">                                </a>
+                                <span class="price-holder"><span>₹19,500</span></span>            				</div>            				
+                            <div class="text-holder">
+            					<h3 class="title"><a href="glimpse of sikkim.html">Glimpse of Sikkim</a></h3>
+            					<div class="meta-info">            						
+                                    <span class="time"><i class="fa fa-clock-o"></i>6 Days - 5 Nights</span>                        
+            					</div>
+            					                                <div class="btn-holder">
+            						<a href="glimpse-of-sikkim.html" class="btn-more">View Detail</a>
+            					</div>
+                                            				</div>
+            			</div>
+            						
+            			<div class="col">            				
+                            <div class="img-holder">
+            					<a href="chardham yatra.html">
+                                    <img width="410" height="250" src="./index_files/hindu-1588337_640-410x250.jpg" class="attachment-travel-agency-blog size-travel-agency-blog wp-post-image" alt="Chardham Yatra" sizes="(max-width: 410px) 100vw, 410px">                                </a>
+                                            				</div>            				
+                            <div class="text-holder">
+            					<h3 class="title"><a href="chardham-yatra.html">Chardham Yatra</a></h3>
+            					<div class="meta-info">            						
+                                    <span class="time"><i class="fa fa-clock-o"></i>12 Days - 11 Nights</span>                        
+            					</div>
+            					                                <div class="btn-holder">
+            						<a href="chardham yatra.html" class="btn-more">View Detail</a>
+            					</div>
+                                            				</div>
+            			</div>
+            						
+            			<div class="col">            				
+                            <div class="img-holder">
+            					<a href="kerala.html">
+                                    <img width="410" height="250" src="./index_files/kanyakumari-1761597_640-410x250.jpg" class="attachment-travel-agency-blog size-travel-agency-blog wp-post-image" alt="Kerala Kanyakumari Madurai Rameshwaram" sizes="(max-width: 410px) 100vw, 410px">                                </a>
+                                <span class="price-holder"><span>₹28,500</span></span>            				</div>            				
+                            <div class="text-holder">
+            					<h3 class="title"><a href="kerala.html">Kerala Kanyakumari Madurai Rameshwaram</a></h3>
+            					<div class="meta-info">            						
+                                    <span class="time"><i class="fa fa-clock-o"></i>10 Days - 9 Nights</span>                        
+            					</div>
+            					                                <div class="btn-holder">
+            						<a href="kerala.html" class="btn-more">View Detail</a>
+            					</div>
+                                            				</div>
+            			</div>
+            			    		</div>
+        
+        
+                  		    <div class="btn-holder featured-btn-holder">
+        			<a href="all trips.html" class="btn-more featured-btn-more">View All Trip</a>
+        		</div>
+                	</div>
+</section>
+<section id="stat_section" class="stats" style="background:url(https://web.archive.org/web/20181020004119im_/http://www.pushpamtours.com/wp-content/plugins/travel-agency-companion/includes/images/img20.jpg) no-repeat">
+	<div class="container">
+		
+                <header class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+			<h2 class="section-title">Why Choose Pushpam Tours</h2><div class="section-content"><p>We're constantly looking for ways to make your holiday as perfect as possible, from the way we plan the trip to the authentic experiences you'll enjoy while away. Those added touches include several that no other India-based travel company offers.</p>
+</div>		</header>
+                
+                <div class="grid wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        <div class="col">
+                <div class="raratheme-sc-holder">
+                    <h2 class="title">Number of Customers</h2>                        <div class="icon-holder">                            
+                            <i class="fa fa fa-group"></i>
+                        </div>
+                                                <div id="817" class="hs-counter wow fadeInDown" data-wow-duration="0.817s" style="visibility: visible; animation-duration: 0.817s; animation-name: fadeInDown;">
+                            <div class="odometer817 odometer odometer-auto-theme" data-count="6851"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">6</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span></div></div>
+                        </div>
+                                        </div>
+            </div>
+                        <div class="col">
+                <div class="raratheme-sc-holder">
+                    <h2 class="title">Number of Trips</h2>                        <div class="icon-holder">                            
+                            <i class="fa fa fa-globe"></i>
+                        </div>
+                                                <div id="818" class="hs-counter wow fadeInDown" data-wow-duration="0.818s" style="visibility: visible; animation-duration: 0.818s; animation-name: fadeInDown;">
+                            <div class="odometer818 odometer odometer-auto-theme" data-count="1785"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">7</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">5</span></span></span></span></span></div></div>
+                        </div>
+                                        </div>
+            </div>
+                        <div class="col">
+                <div class="raratheme-sc-holder">
+                    <h2 class="title">International</h2>                        <div class="icon-holder">                            
+                            <i class="fa fa fa-plane"></i>
+                        </div>
+                                                <div id="819" class="hs-counter wow fadeInDown" data-wow-duration="0.819s" style="visibility: visible; animation-duration: 0.819s; animation-name: fadeInDown;">
+                            <div class="odometer819 odometer odometer-auto-theme" data-count="782"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">7</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">8</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">2</span></span></span></span></span></div></div>
+                        </div>
+                                        </div>
+            </div>
+                        <div class="col">
+                <div class="raratheme-sc-holder">
+                    <h2 class="title">Domestic</h2>                        <div class="icon-holder">                            
+                            <i class="fa fa fa-bus"></i>
+                        </div>
+                                                <div id="820" class="hs-counter wow fadeInDown" data-wow-duration="0.82s" style="visibility: visible; animation-duration: 0.82s; animation-name: fadeInDown;">
+                            <div class="odometer820 odometer odometer-auto-theme" data-count="1003"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">1</span></span></span></span></span><span class="odometer-formatting-mark">,</span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">3</span></span></span></span></span></div></div>
+                        </div>
+                                        </div>
+            </div>
+                            
+        </div>
+        	</div>
+</section>
+
+<section class="our-deals" id="deal_section">
+	<div class="container">
+		
+                <header class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+			<h2 class="section-title">Got Your Own Plans?</h2><div class="section-content"><p>Customize an unforgettable experience with us. Any of our regularly scheduled trips can be arranged for a private group or we can plan an entirely different trip for you.</p>
+</div>		</header>
+                
+        <div class="btn-holder deal-btn-holder"><a href="customize.html" class="btn-more deal-btn-more">Customize</a></div>	</div>
+</section>
+    <footer id="colophon" class="site-footer" itemscope="" itemtype="http://schema.org/WPFooter">
+        <div class="container">
+        <div class="footer-b">
+		<div class="site-info">
+			<span class="copyright"><span style="color: black">
+<font size="3"> Crafted By </font><font size="3">
+<a href="http://theambrosial.com/" style="color:#2c8c04"> 
+The Ambrosial Technologies. </a></font>
+<br>
+</span>
+
+</span>                              
+		</div>
+                <nav class="footer-navigation">
+					</nav><!-- .footer-navigation -->
+	</div>
+            </div><!-- .container -->
+    </footer><!-- #colophon -->
+        </div><!-- #page -->
+    <script type="text/javascript">
+
+if(typeof jQuery == 'undefined' || typeof jQuery.fn.on == 'undefined') {
+	document.write('<script src="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/wp-content/plugins/beaver-builder-lite-version/js/jquery.js"><\/script>');
+	document.write('<script src="https://web.archive.org/web/20181020004119/http://www.pushpamtours.com/wp-content/plugins/beaver-builder-lite-version/js/jquery.migrate.min.js"><\/script>');
+}
+
+</script><script type="text/javascript" src="./index_files/156-layout.js.download"></script>
+<script type="text/javascript" src="./index_files/odometer.js.download"></script>
+<script type="text/javascript" src="./index_files/waypoint.js.download"></script>
+<script type="text/javascript" src="./index_files/owl.carousel.js(1).download"></script>
+<script type="text/javascript" src="./index_files/core.min.js.download"></script>
+<script type="text/javascript" src="./index_files/datepicker.min.js.download"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":0,"isRTL":false});});
+</script>
+<script type="text/javascript" src="./index_files/wow.min.js.download"></script>
+<script type="text/javascript" src="./index_files/custom.min.js.download"></script>
+<script type="text/javascript" src="./index_files/wp-embed.min.js.download"></script>
 
 
+<!--
+     FILE ARCHIVED ON 00:41:19 Oct 20, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:47:55 Jul 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-
-
-</body></html>
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 32.184 (3)
+  esindex: 0.081
+  captures_list: 49.658
+  CDXLines.iter: 14.126 (3)
+  PetaboxLoader3.datanode: 52.837 (4)
+  exclusion.robots: 0.206
+  exclusion.robots.policy: 0.188
+  RedisCDXSource: 0.635
+  PetaboxLoader3.resolve: 23.574
+  load_resource: 69.81
+--></body></html>
