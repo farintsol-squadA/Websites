@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Project Robot</title>
+    <link rel="stylesheet" href="./index_files/normalize.min.css">
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+
+	 <link href="./index_files/css" rel="stylesheet">
+	  <script src="./index_files/jquery.min.js.download"></script>
+
+<link rel="stylesheet" href="./index_files/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./index_files/thumbnail-gallery.css">
+<link rel="stylesheet" href="./index_files/font-awesome.min.css">
+
+<link rel="stylesheet" id="select2.min-css" href="./index_files/select2.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-css" href="./index_files/jquery-ui.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./index_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="animate.min-css" href="./index_files/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-dropdownhover.min-css" href="./index_files/bootstrap-dropdownhover.css" type="text/css" media="all">
+<link rel="stylesheet" id="classiera-components-css" href="./index_files/classiera-components.css" type="text/css" media="all">
+<link rel="stylesheet" id="classiera-css" href="./index_files/classiera.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl.theme.default.min-css" href="./index_files/owl.css" type="text/css" media="all">
+<link rel="stylesheet" id="responsive-css" href="./index_files/responsive.css" type="text/css" media="all">
+
+
+	<link rel="stylesheet" href="./index_files/jquery-ui(1).css" type="text/css" media="all">
+<script src="./index_files/jquery-1.12.4.min.js.download"></script>
+<script src="./index_files/jquery-ui.min.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery_003.js.download"></script><link rel="stylesheet" href="./index_files/css.css">
+
+
+<style type="text/css">
+
+
+html, body {
+    max-width: 100%;
+
+    overflow-x: hidden;
+}
+
+.btn.round:hover{border-color: #232323 !important; } .topBar, .topBar.topBar-v3{ background: #232323; } .classiera-navbar.classiera-navbar-v2, .classiera-navbar.classiera-navbar-v2 .navbar-default, .classiera-navbar.classiera-navbar-v3, .classiera-navbar.classiera-navbar-v3.affix, .home .classiera-navbar.classiera-navbar-v6{ background: #ffffff !important; } .classiera-navbar.classiera-navbar-v2 .navbar-default .navbar-nav > li > a, .classiera-navbar.classiera-navbar-v3 .nav > li > a, .classiera-navbar.classiera-navbar-v6 .navbar-default .navbar-nav > li > a, .classiera-navbar.classiera-navbar-v6 .navbar-default .login-reg a:first-of-type{ color: #232323 !important; } footer .widget-box .tagcloud a{ background: #1a1a1a !important; } footer .widget-box .tagcloud a{ color: #ffffff !important; } .footer-bottom{ background: #444444 !important; } .footer-bottom p, .footer-bottom p a, .footer-bottom ul.footer-bottom-social-icon span{ color: #8e8e8e !important; } .members-v1 .members-text h2.callout_title, .members-v4 .member-content h1, .members-v4 .member-content ul li{ color: #ffffff !important; } .members-v4 .member-content ul li span{border-color: #ffffff; } .members-v1 .members-text h2.callout_title_second, .members-v4 .member-content h4{ color: #ffffff !important; } .members-v1 .members-text p,
+
+    .members-v4 .member-content
+
+ p{ color: #fafafa !important; }
+
+ @media only screen and (max-width: 1200px) {
+ #section05{
+ 	display: none;
+ }
+}
+
+
+
+.bg {
+
+
+		background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2)),
+      url("L2.jpg");
+
+height: 90%;
+  margin: 0;
+
+  background-size: cover;
+}
+
+	section.classiera-static-slider .classiera-static-slider-content h1, section.classiera-static-slider-v2 .classiera-static-slider-content h1, section.classiera-simple-bg-slider .classiera-simple-bg-slider-content h1{
+		color:#fff;
+		font-size:46px;
+		font-family:Catamaran !important;
+		font-weight:700;
+		line-height:46px;
+		text-align:;
+		letter-spacing:;
+	}
+	section.classiera-static-slider .classiera-static-slider-content h2, section.classiera-static-slider-v2 .classiera-static-slider-content h2, section.classiera-simple-bg-slider .classiera-simple-bg-slider-content h4{
+		color:#fff;
+		font-size:20px;
+		font-family:Catamaran !important;
+		font-weight:400;
+		line-height:20px;
+		text-align:;
+		letter-spacing:;
+	}
+
+
+	</style>
+	<style type="text/css" title="dynamic-css" class="options-output">h1,
+h1 a{
+font-family:Catamaran;
+line-height:36px;font-weight:700;font-style:normal;color:#232323;font-size:36px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h1,.wf-loading  h1 a{opacity: 0;}.ie.wf-loading h1,.ie.wf-loading  h1 a{visibility: hidden;}
+
+
+::-webkit-scrollbar
+{
+  width: 15px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+
+}
+
+::-webkit-scrollbar-track
+{
+  background: #232323;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 15px;
+
+  background: #a0e418;
+}
+
+
+ .content-desktop {display: block;}
+    .content-mobile {display: none;}
+
+    @media screen and (max-width: 768px) {
+
+    .content-desktop {display: none;}
+    .content-mobile {display: block;}
+
+
+
+
+
+.autocomplete-items {
+  position: absolute;
+overflow-y: auto;
+height:100px;
+max-width: 100%;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+
+}
+
+.autocomplete-items div {
+  padding: 5px;
+height: auto;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 5px;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+
+
+    }
+
+
+
+</style>
+
+
+	</head>
+
+
+<body class="home page-template page-template-template-landing page-template-template-landing-php page page-id-6 woocommerce-js single-author">
+	
+<link rel="stylesheet" href="./index_files/scrollbar.css" type="text/css" media="all">
+	<header>
+	<section class="topBar topBar-v3 hidden-xs">
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-lg-6 col-md-6 col-sm-8">
+							<p>
+					Support:
+					<span><i class="fa fa-envelope-square"></i>support@landscapeduniya.com</span>
+					<span><i class="fa fa-phone-square"></i>9123456789</span>
+				</p>
+						</div>
+			<div class="col-lg-6 col-md-6 col-sm-4">
+							<div class="login-info text-right text-uppercase flip">
+											<a href="http://127.0.0.1:8000/#">Help</a>
+						<a href="http://127.0.0.1:8000/#">							
+							Download App					</a>
+									</div>
+						</div>
+		</div>
+	</div>
+</section><!-- /.topBar -->
+		<!-- NavBar -->
+
+
+		<style type="text/css">
+
+
+					@media screen and (max-width: 400px) {
+    .mobileloc   { display:none; }
+
+    .mobilesearchbut   { display:none; }
+
+
+
+
+}
+
+		</style>
+<section class="classiera-navbar  classieraNavAffix classiera-navbar-v3 affix-top">
+		<div class="container-fluid">
+				<!-- mobile off canvas nav -->
+				<nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-light navmenu-fixed-left" role="navigation">
+			<div class="navmenu-brand clearfix">
+				<a href="http://127.0.0.1:8000/">
+											<img src="./index_files/logo.png" alt="LD" style="height: 40px; width: 50px;">
+
+									</a>
+				<button type="button" class="offcanvas-button" data-toggle="offcanvas" data-target="#myNavmenu">
+					<i class="fa fa-times"></i>
+				</button>
+			</div><!--navmenu-brand clearfix-->
+			<div class="log-reg-btn text-center">
+									<a href="http://127.0.0.1:8000/login/?next=/" class="offcanvas-log-reg-btn">
+						Login					</a>
+					<a href="http://127.0.0.1:8000/sendotp/" class="offcanvas-log-reg-btn">
+						Signup					</a>
+							</div>
+			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navmenu-nav">
+<li id="menu-item-248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a title="Events And Exhibition " href="http://127.0.0.1:8000/eventshome">Events And Exibition </a></li>
+
+
+<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a title="Jobs" href="http://127.0.0.1:8000/jobshome/">Jobs</a></li>
+
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a title="Jobs" href="http://127.0.0.1:8000/buyandsellpage/">Buy And Sell </a></li>
+
+</ul></div>
+		</nav>
+				<!-- mobile off canvas nav -->
+
+
+
+
+	
+
+		<!--Primary Nav-->
+		<nav class="navbar navbar-default classiera-custom-navbar-v1">
+					<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand-custom" href="http://127.0.0.1:8000/">
+									<img class="img-responsive" src="./index_files/logo.png" style="height: 45px; width: 60px; ">
+
+
+								</a>
+			</div><!--navbar-header-->
+					<div class="collapse navbar-collapse visible-lg" id="navbarCollapse">
+
+				<div class="nav navbar-nav navbar-right nav-v3-follow flip">
+
+		
+										<p style="padding-top: 10px; margin-bottom: -10px;">
+
+	<a href="http://127.0.0.1:8000/login/?next=/"> <span style="color: white; font-weight: bold;">Login </span></a> <span style="color: white; font-weight: bold;">|</span>
+						<a href="http://127.0.0.1:8000/sendotp/" style="color: white; font-weight: bold;">Signup</a>
+
+														</p>
+
+
+				</div>
+				<div class="nav navbar-nav navbar-right betube-search flip">
+
+
+<style type="text/css">
+		.button {
+  background-color: #a0e418; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonheader {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -5px 10px;
+  cursor: pointer;
+    background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+
+.buttonheader2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 10px;
+  cursor: pointer;
+    background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+</style>
+
+
+
+
+				</div>
+							<ul id="menu-main-menu-1" class="nav navbar-nav navbar-right nav-margin-top flip nav-ltr">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://127.0.0.1:8000/eventshome/"><button class=" buttonheader" style="font-weight: 600; border-radius: 5px;"> Events &amp; Exhibition </button></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://127.0.0.1:8000/jobshome/"><button class=" buttonheader" style="font-weight: 600; border-radius: 5px;"> Jobs </button></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://127.0.0.1:8000/buyandsellpage/"><button class=" buttonheader" style="font-weight: 600; border-radius: 5px;"> Buy &amp; Sell </button></a></li>
+
+</ul>							</div><!--collapse navbar-collapse visible-lg-->
+		</nav>
+
+
+
+
+
+
+
+
+
+
+
+		<!--Primary Nav-->
+		</div><!--container-->
+</section>
+<!-- NavBar -->	<!-- Mobile App button -->
+	<div class="mobile-submit affix" style="">
+        <ul class="list-unstyled list-inline mobile-app-button">
+		            <li>
+                <a href="http://127.0.0.1:8000/login/?next=/">
+                    <i class="fa fa-sign-in"></i>
+                    <span>Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:8000/#">
+                    <i class="fa fa-edit"></i>
+                    <span>Submit Ad</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:8000/sendotp/">
+                    <i class="fa fa-user-o"></i>
+                    <span>Get Registered</span>
+                </a>
+            </li>
+		         </ul>
+    </div>
+	<!-- Mobile App button -->
+	</header>
+
+	<style type="text/css">
+		
+		@media screen and (max-width: 400px) {
+    .mobileloc   { display:none; }
+
+    .mobilesearchbut   { display:none; }
+
+
+
+   
+}
+
+
+@media screen and (min-width: 400px) {
+    .mobsearchicon {
+    	 display:none;
+    }
+   
+}
+
+.f {
+
+	font-family : 'Montserrat',sans-serif; 
+	font-size: 15px;
+	  color: black; 
+}
+
+.lowerRight {
+	margin-top: 40px;
+
+}
+ 
+
+	</style>
+
+
+
+
+
+
+
+
+
+
+	<!-- back to top -->
+	<a href="http://127.0.0.1:8000/#" id="back-to-top" title="Back to top" class="social-icon social-icon-md"><i class="fa fa-angle-double-up fa-3x removeMargin"></i></a>
+
+	
+
+
+
+
+<section class="classiera-simple-bg-slider bg" style="height: 90vh;">
+	<div class="classiera-simple-bg-slider-content text-center">
+		<br> <br> <p style="font-family : &#39;Montserrat&#39;,sans-serif;  font-size: 320%; line-height: 1.0; color: #fff;"> <span style="font-size: 55px; font-weight: 600;">Welcome</span> <br>  <span style="font-size: 30px;">to</span><span class="color" style="font-weight: 600; font-size: 1.4em;"> <br>Landscape Duniya</span></p> <br>
+
+	<section class="search-section search-section-v4" style="align-content: center;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+<!--Locations-->
+
+
+<style>
+
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  font-family : 'Montserrat',sans-serif;
+
+}
+
+
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+overflow-y: auto;
+height:200px;
+width: 100%;
+  border-bottom: none;
+  border-top: none;
+  z-index: 1099;
+  /*position the autocomplete items to be the same width as the container:*/
+
+}
+
+.autocomplete-items div {
+  padding: 5px;
+height: auto;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  border-radius: 5px;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+
+
+
+.dropbtn{
+  font-family : 'Montserrat',sans-serif;
+  font-weight: 600;
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+    max-width: 300px;
+  font-size: 13px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+      overflow-x: hidden;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #a0e418;
+}
+</style>
+
+
+
+					<div class="form-group col-md-4" style="width: 400px;">
+						<!--Searchkeyword-->
+						<div class="form-icon inner-addon left-addon autocomplete">
+							<i class="form-icon form-icon-size-small fa fa-search" style="font-size: 20px; color: #a0e418;"></i>
+							<input type="text" style="height: 45px;" id="myInput" class="form-control form-control-sm" placeholder="Enter keyword..." data-error="Please Type some words..!" name="q" value="">
+
+							<span class="classieraSearchLoader" style="display: none;"><img src="./index_files/loader.gif" alt="classiera loader"></span>
+						</div>
+						<!--Searchkeyword-->
+					</div>
+
+
+
+										<div class="form-group col-md-4" style="width: 250px;">
+                       <div class="form-icon inner-addon left-addon">
+							<i class="form-icon form-icon-size-small fa fa-map-marker" style="font-size: 20px; color: #a0e418;"></i>
+						   <input type="text" style="height: 45px;" id="getCity" class="form-control form-control-sm" placeholder="Location" name="l" value="">
+								<!--<a href="#" class="form-icon form-icon-size-small" title="Click here to get your own location">-->
+								
+							                        </div>
+                    </div>
+
+
+ <div class="col-md-2">
+	 <a href="search1.html"> <button class="btn btn-primary" type="submit" name="search" value="Search" style=" height: 45px; ">Search</button> </a>
+ </div>
+
+
+
+
+									<div class="form-group col-md-4" style="width: 300px;">
+                       <div class="form-icon inner-addon left-addon">
+
+						     <div class="dropdown">
+    <button class="dropbtn buttonheader2" style="border-radius: 15px;">POPULAR CATEGORIES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" style="height:250px;overflow: auto;
+  white-space: nowrap;">
+		
+       <a href="http://127.0.0.1:8000/subcategory/1">1) Architect Designer &amp; Consultant</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/2">2) Development &amp; Maintenance</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/3">3) Furniture, Artifacts &amp; Sculptures</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/4">4) Soil Media &amp; Conditioners</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/5">5) Pesticides, Fungicides &amp; Ferti.</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/6">6) Pots &amp; Accessories</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/7">7) Rocks &amp; Pebbles</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/8">8) Drainage System &amp; Accessories</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/9">9) Irrigation System</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/10">10) Green Wall</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/11">11) Green House Construction</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/12">12) Rainwater Harvesting</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/13">13) Hydroponic &amp; Aeroponics</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/14">14) Tools Equipments and Implements</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/15">15) Tree Transplanting &amp; Accessories</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/16">16) Seed, Seedling &amp; Sapling</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/17">17) Play Equipment's &amp; Water Slides</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/18">18) Open Gym Equipment's</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/19">19) Environmentalist, Ecologist &amp; Arborologist</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/20">20) Artificial Flower Trees &amp; Plants</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/21">21) Pools &amp; Fountains</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/22">22) Sports Field &amp; Golf Course</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/23">23) Bamboos &amp; Grasses</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/24">24) Bromeliad, Cacti &amp; Succulents</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/25">25) Climbers &amp; Creepers</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/26">26) Fern &amp; Ground Covers</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/27">27) Fruit Plants</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/28">28) Indoor Plants</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/29">29) Lawns</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/30">30) Medicinal Plants</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/31">31) Shrubs</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/32">32) Lilies &amp; Bulbous</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/33">33) Orchids</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/34">34) Palms &amp; Cycads</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/35">35) Roses (Climbers, Floribundas, Hybrid Teas, Miniatures)</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/36">36) Spice Plants &amp; Edible Herbs</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/37">37) Water &amp; Aquatic Plants</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/38">38) Indigenous Plant &amp; Trees (Native)</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/39">39) Flowering Pot Plants / Seasonal Flowering Plants</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/40">40) Books &amp; Journals</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/41">41) Trees</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/42">42) Import &amp; Export</a>
+      
+       <a href="http://127.0.0.1:8000/subcategory/43">43) Lighting</a>
+      
+    </div>
+  </div>
+							<!--<a href="#" class="form-icon form-icon-size-small" title="Click here to get your own location">-->
+								
+							                        </div>
+                    </div>
+										<!--Locations-->
+
+
+
+
+
+
+
+				</form>
+
+</div><!--col-md-12-->
+<br>
+
+
+		</div><!--row-->
+								<section id="section05" class="demo">
+
+  <a href="http://127.0.0.1:8000/#section06"><span></span></a>
+
+</section>
+
+
+	</div><!--container-->
+</section><!--search-section--><!-- premium Ads -->
+
+	</div><!--classiera-simple-bg-slider-content-->
+	<div id="section06"></div>
+</section><!--classiera-simple-bg-slider-->
+
+
+
+<!-- premium Ads --><section class="section-pad category-v3 border-bottom" style="background-color: white;">
+	<div class="section-heading-v1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 center-block">
+                    <p class="text-uppercase" style="font-family : &#39;Montserrat&#39;,sans-serif;  font-size: 30px; color: black; margin-top: -15px; line-height: 1.6;text-shadow: 1px 1px 2px black;">ALL &nbsp; LANDSCAPE &nbsp; CATEGORIES</p>
+
+
+
+
+                </div><!--col-lg-7-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--section-heading-v1-->
+
+
+   <div class="tz-gallery">
+
+        <div class="row">
+
+            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/39">  <img src="./index_files/39.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Flowering Pot Plants / Seasonal Flowering Plants         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/39" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/37">  <img src="./index_files/37.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Water &amp; Aquatic Plants         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/37" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/38">  <img src="./index_files/38.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Indigenous Plant &amp; Trees (Native)         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/38" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/40">  <img src="./index_files/40.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Books &amp; Journals         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/40" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/25">  <img src="./index_files/25.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Climbers &amp; Creepers         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/25" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/3">  <img src="./index_files/3.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Furniture, Artifacts &amp; Sculptures         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/3" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/11">  <img src="./index_files/11.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Green House Construction         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/11" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/12">  <img src="./index_files/12.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Rainwater Harvesting         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/12" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/14">  <img src="./index_files/14.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Tools Equipments and Implements         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/14" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/10">  <img src="./index_files/10.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Green Wall         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/10" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/15">  <img src="./index_files/15.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Tree Transplanting &amp; Accessories         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/15" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+             <div class="col-md-2 col-sm-4 col-xs-12">
+                <div class="thumbnail" style="height: 270px;">
+
+
+
+                      <a href="http://127.0.0.1:8000/subcategory/31">  <img src="./index_files/31.jpg" alt="Park" style="height: 130px; width: 100%;">
+                    </a>
+
+
+                     <div class="caption" style="height: 50px;">
+                        <p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 17px; font-weight: 600; text-align: center; color: black; padding-top: 0px">  Shrubs         </p>
+
+
+                    </div>
+ <div align="center" style="position: relative;">
+                        	<a href="http://127.0.0.1:8000/subcategory/31" class="button button4" style="height: 26px; padding:1px; width:100px; border-radius: 25px; position: absolute; bottom: -80px; margin-left: -50px;">Know More</a>
+                        </div>
+                </div>
+
+            </div>
+			            
+
+
+
+
+
+
+</div>
+   </div>
+
+        <br>
+
+
+
+
+
+
+<button onclick="location.href=&#39;/allcategory/&#39;" class="button button2" style=" padding: 10px;margin:auto; display:block; background-color: #a0e418; font-size: 20px;"><a style="color: #fff;">Click Here For More Categories</a> </button>
+
+
+
+<style type="text/css">
+
+	/* Full-width input fields */
+.qfinp {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+border:2px solid #4CAF50;
+border-radius: 10px;
+
+
+
+}
+
+.qfinp:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .qfinp {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+</style>
+
+
+
+
+
+
+</section>
+
+
+
+<section class="members-v2 content-desktop" style="background-color: white; ">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-sm-6 hidden-xs hidden-sm">
+				<img src="./index_files/quote.jpg" height="950" style="margin-left: -20%;">
+
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12" style="margin-left: -42%; width: 1100px;">
+				<div class="members-text text-left flip" style=" background-color: white; margin-top:50px; border: 2px solid #4CAF50; margin-right: 50px;">
+
+
+<br>
+
+					<h1 style="margin-left: 40px; text-align: center;">Post requirement  and we'll do the rest for you.</h1>
+
+
+
+										<form method="POST" enctype="multipart/form-data"><input type="hidden" name="csrfmiddlewaretoken" value="DlcrKyisZtcTBRWlp9IScaKxbBNvgNME3tuEtZzjmKRhuW4Ieqa4M4ILrCUxBXg8">
+  <div class="container">
+
+
+
+    <!--<input type="text" class="qfinp" placeholder="Enter Product / Service Name" name="email" required> <br>-->
+
+        <!--<input type="text" class="qfinp" placeholder="Enter Your Name" name="email" required> <br>-->
+
+
+    <!--<input type="text" class="qfinp" placeholder="Enter Your Contact Number" name="email" required> <br>-->
+
+<input type="text" name="requirements" class="qfinp" placeholder="Enter Product/Requirements/Service Name" required="" id="id_requirements">&nbsp; &nbsp; &nbsp;
+<input type="text" name="required_at" class="qfinp" placeholder="Required At Location:" required="" id="id_required_at"><br>
+<input type="number" name="approx_budget" class="qfinp" placeholder="Approximate Budget" id="id_approx_budget"> &nbsp; &nbsp; &nbsp;
+
+
+<input type="text" name="name" class="qfinp" placeholder="Enter Your Name" required="" id="id_name"> &nbsp; &nbsp; &nbsp;
+<input type="number" name="mobile" class="qfinp" placeholder="Enter Your Contact Number" required="" id="id_mobile"> &nbsp; &nbsp; &nbsp;
+<input type="text " name="email" class="qfinp" placeholder="Email" required="" id="id_email">&nbsp; &nbsp; &nbsp;
+<input type="text " name="address" class="qfinp" placeholder="Address" required="" id="id_address"> &nbsp; &nbsp; &nbsp;
+<input type="text " name="city" class="qfinp" placeholder="City" required="" id="id_city">&nbsp; &nbsp; &nbsp;
+<input type="text " name="state" class="qfinp" placeholder="State" required="" id="id_state">&nbsp; &nbsp; &nbsp;
+<input type="number " name="pin" class="qfinp" placeholder="Pin Code" required="" id="id_pin">
+	  <br>
+ <label for="pdf">Upload Requirement :</label>
+<input type="file" class="qfinp" id="pdf" name="pdf">
+
+
+
+
+  </div>
+<br>
+	<button class="button button2" type="submit" value="Submit" style="margin:auto; display:block; background-color: black;">Submit </button>
+
+</form>
+					<br>
+									</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="members-v2 content-mobile " style="background-color: white; ">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-sm-6 hidden-xs hidden-sm">
+				<img src="./index_files/quote.jpg" height="950" style="margin-left: -20%;">
+
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12" style=" width: 100%;">
+				<div class="members-text text-left flip" style=" background-color: white; margin-top:50px; border: 2px solid #4CAF50; margin-right: 50px;">
+
+
+<br>
+
+					<h1 style=" text-align: center;">Post requirement  and we'll do the rest for you.</h1>
+
+
+
+										<form id="myForm" method="POST" novalidate="true" enctype="multipart/form-data"><input type="hidden" name="csrfmiddlewaretoken" value="DlcrKyisZtcTBRWlp9IScaKxbBNvgNME3tuEtZzjmKRhuW4Ieqa4M4ILrCUxBXg8">
+  <div class="container">
+
+
+
+    <!--<input type="text" class="qfinp" placeholder="Enter Product / Service Name" name="email" required> <br>-->
+
+        <!--<input type="text" class="qfinp" placeholder="Enter Your Name" name="email" required> <br>-->
+
+
+    <!--<input type="text" class="qfinp" placeholder="Enter Your Contact Number" name="email" required> <br>-->
+
+<input type="text" name="requirements" class="qfinp" placeholder="Enter Product/Requirements/Service Name" required="" id="id_requirements">
+<input type="text" name="required_at" class="qfinp" placeholder="Required At Location:" required="" id="id_required_at"><br>
+<input type="number" name="approx_budget" class="qfinp" placeholder="Approximate Budget" id="id_approx_budget">
+
+
+<input type="text" name="name" class="qfinp" placeholder="Enter Your Name" required="" id="id_name">
+<input type="number" name="mobile" class="qfinp" placeholder="Enter Your Contact Number" required="" id="id_mobile">
+<input type="text " name="email" class="qfinp" placeholder="Email" required="" id="id_email">
+<input type="text " name="address" class="qfinp" placeholder="Address" required="" id="id_address">
+<input type="text " name="city" class="qfinp" placeholder="City" required="" id="id_city">
+<input type="text " name="state" class="qfinp" placeholder="State" required="" id="id_state">
+<input type="number " name="pin" class="qfinp" placeholder="Pin Code" required="" id="id_pin">
+	  	  <br>
+ <label for="pdf">Upload Requirement :</label>
+<input type="file" class="qfinp" id="pdf" name="pdf">
+
+
+
+
+  </div>
+											<br>
+
+	<button class="button button2" type="submit" onclick="submit()" value="Reset Form" style="margin:auto; display:block; background-color: black;">Submit </button>
+
+</form>
+					<br>
+									</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="members-v2">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-sm-6 hidden-xs hidden-sm">
+
+<img src="./index_files/down.svg" height="500">
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12" style="padding-top: 60px;">
+				<div class="members-text text-left flip">
+
+
+
+
+					<p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 25px; font-weight: 600; text-align: center; color: black; padding-top: 10px">Get Robot App
+
+</p>
+					<p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 15px; font-weight: 300; text-align: center; color: black; padding-top: 10px">Search for products / services and connect with verified sellers on the go!</p>
+
+
+
+										<form action="http://127.0.0.1:8000/action_page.php">
+  <div class="container">
+
+
+
+    <input type="text" class="qfinp" placeholder="Enter Mobile Number" name="email" required="">
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+</form>
+<p style="font-family : &#39;Montserrat&#39;,sans-serif; font-size: 15px; font-weight: 300; text-align: center; color: black; padding-top: 10px">We will send you a link, open it on your phone to download the App</p>
+
+
+
+<button class="button button2" style="margin:auto; display:block; background-color: black;">Send Link </button>
+									</div>
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+		  
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+                Landscape Duniya
+                 brings you accurate and authentic information on every aspect of landscaping
+                that you can get and grow in India. landscapeduniya.com contains a wide range of
+                information along with easy search and presentation tools.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6> Popular Categories</h6>
+            <ul class="footer-links">
+                <li><a href="http://127.0.0.1:8000/search/?q=Garden+Architects&amp;l=" class="w3-bar-item sidebar"> Garden Architects</a></li>
+                <li><a href="http://127.0.0.1:8000/search/?q=Landscape+Architects&amp;l=" class="w3-bar-item  sidebar"> Landscape Architects</a></li>
+                <li> <a href="http://127.0.0.1:8000/search/?q=Landscape+Designer&amp;l=" class="w3-bar-item sidebar"> Landscape Designer </a></li>
+                <li><a href="http://127.0.0.1:8000/search/?q=Horticulture+Consultant&amp;l=" class="w3-bar-item sidebar">  Horticulture Consultant </a></li>
+                <li><a href="http://127.0.0.1:8000/search/?q=Landscape+Consultant&amp;l=" class="w3-bar-item sidebar">  Landscape Consultant</a></li>
+                <li><a href="http://127.0.0.1:8000/search/?q=Garden+Consultant&amp;l=" class="w3-bar-item sidebar">  Garden Consultant </a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://127.0.0.1:8000/#">About Us</a></li>
+              <li><a href="http://127.0.0.1:8000/#">Contact Us</a></li>
+              <li><a href="http://127.0.0.1:8000/#">Privacy Policy</a></li>
+              <li><a href="http://127.0.0.1:8000/#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright © 2017 All Rights Reserved by
+         <a href="http://127.0.0.1:8000/#">Landscape Duniya</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="http://127.0.0.1:8000/#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="http://127.0.0.1:8000/#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="http://127.0.0.1:8000/#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="http://127.0.0.1:8000/#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+  <style>
+      .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+  </style>
+
+
+	<!-- back to top -->
+	<!--<a href="#" id="back-to-top" title="Back to top" class="social-icon social-icon-md"><i class="fas fa-arrow-up"></i></a>-->
+
+
+
+
+<script type="text/javascript">
+document.getElementById("uploadBtn").onchange = function () {
+
+document.getElementById("uploadFile").value = this.value;
+};
+
+document.getElementById("uploadBtn2").onchange = function () {
+
+document.getElementById("uploadFile2").value = this.value;
+};
+
+function submit() {
+  /*Put all the data posting code here*/
+ document.getElementById("myForm").reset();
+}
+</script>
+
+<script type="text/javascript" src="./index_files/SubcatSuggestion.js.download"></script>
+
+<script type="text/javascript" src="./index_files/jquery_004.js.download"></script>
+<script type="text/javascript" src="./index_files/bootstrap.js.download"></script>
+<script type="text/javascript" src="./index_files/bootstrap-dropdownhover.js.download"></script>
+
+<script type="text/javascript" src="./index_files/jquery.js.download"></script>
+
+<script type="text/javascript" src="./index_files/classiera.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery-ui.js.download"></script>
+
+
+
+
+
+
+
+</body></html>
