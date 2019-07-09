@@ -1,0 +1,45 @@
+jQuery(document).ready(function($){
+    function addCommas(nStr) {
+        nStr += '';
+        var x = nStr.split('.');
+        var x1 = x[0];
+        var x2 = x.length > 1 ? '.' + x[1] : '';
+        var rgx = /(\d+)(\d{3})/;
+        while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        }
+        return x1 + x2;
+    }
+     
+    $('body').on('change', '.travelers-no', function (e){
+        $("#price-loading").fadeIn(500);
+        $val = $(this).val();
+        $new_val = $('.trip-cost-holder').first().text().replace(/,/g, '');
+        $total = $val*$new_val;
+        $total = addCommas( $total );
+        $('.total').text(addCommas($total));
+        $('#trip-cost').val($total);
+        $("#price-loading").fadeOut(500);
+    });
+});
+/*
+     FILE ARCHIVED ON 11:54:45 Sep 25, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:42:03 Jul 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 86.134 (3)
+  esindex: 0.041
+  captures_list: 108.117
+  CDXLines.iter: 14.464 (3)
+  PetaboxLoader3.datanode: 116.977 (4)
+  exclusion.robots: 0.264
+  exclusion.robots.policy: 0.241
+  RedisCDXSource: 2.815
+  PetaboxLoader3.resolve: 25.62
+  load_resource: 73.969
+*/
