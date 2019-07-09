@@ -1,0 +1,39 @@
+jQuery(document).ready(function($){
+    var rtlenable = false;
+    if(rtl.enable == '1')
+    {
+        rtlenable = true;
+    }
+    $(".wpte-trip-feat-img-gallery").owlCarousel({
+        nav     : true,
+        navigationText: ['&lsaquo;','&rsaquo;'],
+        items   : 1,
+        autoplay: true,
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        center  : true,
+        loop    : true,
+        rtl     : rtlenable,
+    });
+});
+/*
+     FILE ARCHIVED ON 16:20:42 Sep 25, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:32:38 Jul 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 238.622 (3)
+  esindex: 0.009
+  captures_list: 268.244
+  CDXLines.iter: 8.84 (3)
+  PetaboxLoader3.datanode: 270.149 (4)
+  exclusion.robots: 0.19
+  exclusion.robots.policy: 0.178
+  RedisCDXSource: 18.055
+  PetaboxLoader3.resolve: 37.582
+  load_resource: 72.509
+*/
