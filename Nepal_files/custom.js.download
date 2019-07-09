@@ -1,0 +1,42 @@
+jQuery(document).ready(function($){
+	   $('.wp-travel-engine-datetime').datepicker({ maxDate: 0, changeMonth: true,
+			changeYear: true, dateFormat: 'yy-mm-dd', yearRange: "-100:+0" });
+	   $('.wp-travel-engine-price-datetime').datepicker({
+            dateFormat: 'yy-mm-dd',
+            minDate: 0,
+            onSelect: function(){
+            $('.check-availability').hide();
+            $('.book-submit').fadeIn('slow');
+            }
+            });
+    	$('body').on('click', '#wp-travel-engine-terms input', function (e){ 
+            if ($('#wp-travel-engine-terms input').is( ':checked' )) {
+                $('#wp-travel-engine-terms input').attr( 'value','1' );
+            }
+            else{
+                $('#wp-travel-engine-terms input').attr('value','0');
+            }
+        });
+});
+
+/*
+     FILE ARCHIVED ON 17:40:36 Sep 25, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 05:42:03 Jul 09, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 123.872 (3)
+  esindex: 0.01
+  captures_list: 151.52
+  CDXLines.iter: 12.085 (3)
+  PetaboxLoader3.datanode: 153.435 (4)
+  exclusion.robots: 0.2
+  exclusion.robots.policy: 0.185
+  RedisCDXSource: 11.748
+  PetaboxLoader3.resolve: 53.615
+  load_resource: 85.1
+*/
